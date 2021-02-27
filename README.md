@@ -16,3 +16,8 @@ Store the return value in Mongo as a Python dictionary.
 Create a root route / that will query your Mongo database and pass the mars data into an HTML template to display the data.
 
 Create a template HTML file called index.html that will take the mars data dictionary and display all of the data in the appropriate HTML elements. 
+
+
+![Summary Statistics](https://github.com/AliceSartori/sqlalchemy/blob/main/Precipitations%20over%2012-month%20period.png)
+
+![Summary Statistics](https://github.com/AliceSartori/sqlalchemy/blob/main/Precipitations%20over%2012-month%20period.png)
