@@ -1,0 +1,24 @@
+/* Body */
+body{
+    background-color: white;
+}
+
+
+.jumbotron {
+    font-size: 35px;
+    /* cursor: pointer; */
+    width: 98%;
+    margin: 0 auto;
+}
+
+.jumbotron h1{
+  font-size: 100px;
+/* font-weight: 800; */
+
+}
+
+
+.container-fluid{
+  padding-top: 45px;
+
+}

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Mars: The Red Planet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-danger btn-lg" href="/scrape" role="button" > Newest Data from Mars </a></p>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="card">
+      <h1 class="card-header"> Latest News from the Red Planet </h1>
+      <div class="card-body">
+        <h5 class="card-title">{{data_mars[0].news_title}}</h5>
+        <p class="card-text">{{data_mars[0].news_paragraph}}</p>
+        <center><a href="https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest" class="btn btn-danger">NASA Mars Exploration Program</a></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row" style="padding: 20px 10px 20px 10px;">
+        <div class="col-lg-7 col-md-10">
+           <h1 class="title"> Featured Mars Image</h1>
+            <p> {{data_mars[0].mars_text}} </p>
+           <a href="{{data_mars[0].image_url}}">
+               <img class="panel img-fluid img_test" src="{{data_mars[0].image_url}}" alt="Featured Image"></a>
+               <!-- <br>
+               <center><a class="btn btn-danger" href='{{data_mars[0].image}}' role="button">Download TIFF</a></center> -->
+         </div>
+
+         <div class="col-lg-4 col-md-10">
+             <h1 class="title"> Mars Facts </h1>
+                   {{data_mars[0].facts_table|safe}}
+                   <br>
+             <center><a class="btn btn-danger" href='{{data_mars[0].image}}' role="button">Download TIFF</a></center>
+          </div>
+
+      </div>
+  </div>
+     <div class="container-fluid">
+         <h1 class="title text-center" > Mars Hemispheres</h1>
+        <hr>
+         <p>Click on any of the images to get a closer look of Mars</p>
+         <br>
+         {%for data_row in data_mars[0].hemispheres | batch(2, '&nbsp;') %}
+         <div class="row">
+           {%for data in data_row %}
+           <div class="col-lg-6 col-md-12 ">
+             <h4 >{{data.Title}}</h4>
+             <a href="{{data.Hemisphere}}">
+               <img class='table-img img-fluid' src="{{data.Hemisphere}}" alt="{{data.Title}} Responsive image">
+             </a>
+           </div>
+           {%endfor%}
+         </div>
+           {%endfor%}
+       </div>
+
+ </div>
+
+</body>
+</html>
