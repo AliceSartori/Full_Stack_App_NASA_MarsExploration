@@ -1,27 +1,7 @@
 # Web-scraping-challenge
 
 ## Step 1 - Scraping
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
-
-1. NASA Mars News
-
-Scrape the NASA Mars News Site and collect the latest News Title and Paragraph Text. 
-
-2. JPL Mars Space Images - Featured Image
-
-Visit the url for JPL Featured Space Image here.
-
-Use splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called featured_image_url.
-
-Make sure to find the image url to the full size .jpg image.
-
-3. Mars Facts
-
-Visit the Mars Facts webpage here and use Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc.
-
-4. Mars Hemispheres
-
-Visit the USGS Astrogeology site here to obtain high resolution images for each of Mar's hemispheres.
+Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter by visiting NASA Mars News, JPL Mars Space Images - Featured Image, Mars Facts, and e USGS Astrogeology site to obtain data on Mars .
 
 
 ## Step 2 - MongoDB and Flask Application
