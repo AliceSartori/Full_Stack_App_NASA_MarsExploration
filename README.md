@@ -1,7 +1,7 @@
 # Web-scraping-challenge
 
 ## Step 1 - Scraping
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter by visiting NASA Mars News, JPL Mars Space Images - Featured Image, Mars Facts, and e USGS Astrogeology site to obtain data on Mars .
+Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter by visiting NASA Mars News, JPL Mars Space Images - Featured Image, Mars Facts, and USGS Astrogeology site to obtain data on Mars.
 
 
 ## Step 2 - MongoDB and Flask Application
