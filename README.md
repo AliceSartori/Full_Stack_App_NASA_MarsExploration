@@ -18,6 +18,6 @@ Create a root route / that will query your Mongo database and pass the mars data
 Create a template HTML file called index.html that will take the mars data dictionary and display all of the data in the appropriate HTML elements. 
 
 
-![Summary Statistics](https://github.com/AliceSartori/sqlalchemy/blob/main/Precipitations%20over%2012-month%20period.png)
+![Mars Homepage](https://github.com/AliceSartori/Web-scraping-challenge/blob/main/Screen%20Shot%202021-02-26%20at%207.17.17%20PM.png)
 
 ![Mars Hemispheres](https://github.com/AliceSartori/Web-scraping-challenge/blob/main/Screen%20Shot%202021-02-26%20at%207.17.06%20PM.png)
