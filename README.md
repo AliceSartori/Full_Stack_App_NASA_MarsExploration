@@ -1,6 +1,6 @@
-## Web-scraping-challenge
+# Web-scraping-challenge
 
-# Step 1 - Scraping
+## Step 1 - Scraping
 Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
 1. NASA Mars News
